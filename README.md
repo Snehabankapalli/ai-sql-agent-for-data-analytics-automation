@@ -1,6 +1,10 @@
 # AI SQL Agent for Data Analytics Automation
 
-> An AI-powered agent that monitors data pipelines, diagnoses failures using Claude API, auto-generates SQL fixes, and delivers plain-English explanations to Slack — reducing mean time to resolution from hours to minutes.
+[![CI](https://github.com/Snehabankapalli/ai-sql-agent-for-data-analytics-automation/actions/workflows/ci.yml/badge.svg)](https://github.com/Snehabankapalli/ai-sql-agent-for-data-analytics-automation/actions/workflows/ci.yml)
+[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+> An AI-powered agent that monitors data pipelines, diagnoses failures using Claude API, auto-generates SQL fixes, and delivers plain-English explanations to Slack, reducing mean time to resolution from hours to minutes.
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![Claude API](https://img.shields.io/badge/Claude_API-6B48FF?style=flat)
