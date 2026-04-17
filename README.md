@@ -69,14 +69,24 @@ Most data pipeline failures take hours to diagnose — an engineer has to check 
 
 ## 3. Scale and Impact
 
-| Metric | Value |
-|--------|-------|
-| Mean time to diagnosis | < 60 seconds (vs 2-4 hours manual) |
-| Pipelines monitored | Airflow, AWS Glue, dbt, Snowflake |
-| Self-healing rate | ~40% of failures auto-resolved |
-| False positive rate | < 5% |
-| On-call interruptions reduced | 60% |
-| SQL accuracy (Claude-generated fixes) | 87% correct on first attempt |
+| Metric | Before (manual) | After (agent) | Improvement |
+|--------|:---:|:---:|:---:|
+| Mean time to diagnosis | 2-4 hours | < 60 seconds | **97% faster** |
+| On-call pages per week | ~15 | ~6 | **60% reduction** |
+| Failures auto-resolved | 0% | 40% | **No human needed** |
+| SQL fix accuracy | N/A | 87% first attempt | Senior-eng quality |
+| False positive rate | N/A | < 5% | Low noise |
+| Manual query writing time | 20-45 min/incident | 0 min | **100% automated** |
+
+**What the agent handles vs what still needs a human:**
+
+| Agent handles (auto) | Human reviews |
+|---|---|
+| Transient S3/network errors (rerun) | Novel schema changes from vendors |
+| Null spikes from known source drift | Cross-pipeline cascade failures |
+| Warehouse suspension (resume + rerun) | Permission/credential expiry |
+| dbt test failures with clear fix SQL | Business logic disputes |
+| Volume drops with upstream Kafka lag | Incidents needing stakeholder comms |
 
 ---
 
