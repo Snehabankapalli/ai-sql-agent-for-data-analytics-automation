@@ -7,10 +7,13 @@
 > An AI-powered agent that monitors data pipelines, diagnoses failures using Claude API, auto-generates SQL fixes, and delivers plain-English explanations to Slack, reducing mean time to resolution from hours to minutes.
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![Claude API](https://img.shields.io/badge/Claude_API-6B48FF?style=flat)
+![Anthropic SDK](https://img.shields.io/badge/Anthropic_SDK-6B48FF?style=flat)
+![Claude Sonnet 4.6](https://img.shields.io/badge/Claude_Sonnet_4.6-6B48FF?style=flat)
 ![Apache Airflow](https://img.shields.io/badge/Airflow-017CEE?style=flat&logo=apacheairflow&logoColor=white)
 ![Snowflake](https://img.shields.io/badge/Snowflake-29B5E8?style=flat&logo=snowflake&logoColor=white)
 ![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat&logo=amazonaws&logoColor=white)
+
+**LLM:** Claude Sonnet 4.6 via Anthropic Python SDK (custom agent, no LangChain/LlamaIndex dependency)
 
 ---
 
