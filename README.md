@@ -17,6 +17,9 @@
 
 ---
 
+![Demo](demo.svg)
+
+
 ## 1. What This System Does
 
 Most data pipeline failures take hours to diagnose — an engineer has to check logs, query Snowflake, read stack traces, and figure out what broke. This agent does all of that automatically using Claude API.
